@@ -148,7 +148,7 @@ button{
 	display: block;
 	color: white;
 	font-size: 24px;
-	margin: 0 auto;
+	margin: 15px auto;
   }
 
 
@@ -179,7 +179,7 @@ input[type="checkbox"]{
 input[type="text"]{
 	border: 2px solid white;
 	background: #F4F4F5;
-	padding-left: 5px;
+	padding: 0 0 0 5px;
 	width: 90%;
 	height: 40px;
 	border-radius: 12px;
@@ -211,7 +211,7 @@ footer{
 	width: 100%;
 	padding: 10px 0px 10px 0px;
 }
-footer h3,p,button,section.hours{
+footer h3,p,button,.hours{
 	margin: 15px 40px;
 }
 
@@ -222,8 +222,10 @@ input[type="hours"]{
 	height: 40px;
 	border-radius: 12px;
 	display: inline-block;
-	padding-left: 5px;
+	margin: 5px auto;
+	padding: 0 0 0 5px;
 }
+
 input[type="city"]{
 	border: 2px solid white;
 	background: #F7F7FF;
@@ -232,17 +234,56 @@ input[type="city"]{
 	border-radius: 12px;
 	display: inline-block;
 	margin: 5px auto;
-	padding-left: 5px;
+	padding: 0 0 0 5px;
 }
 /* End of footer */
 
 /*Media Screens */
-@media screen and (min-width: 375px) {
-
+@media screen and (min-width: 375px){
 h1{
 	font-size: 80px;
 }
 h2{
 	font-size: 24px;
+}
+.calc{
+	width: 200px;
+	margin: 5px auto;
+}
+input[type="city"]{
+	width: 25%;
+	height: 40px;
+}
+.hours{
+	display: flex;
+}
+}
+@media screen and (min-width: 675px){
+	footer{
+		display: grid;
+		grid-auto-columns: 1fr 1fr;
+	}
+	.scooter{
+		position: absolute;
+		top: 0px;
+		left: 500px;
+		width: 819.36px;
+		height: 599.26px;
+		margin: 0 auto;
+	}
+
+	form.application{
+		float: right;
+		width: 30%;
+		margin-right: 40px;
+	}
+	.heading{
+		width:30%;
+	}
+
+	.social-media{
+	margin: 10px 60px;
+	display: flex;
+	justify-content: space-evenly;
 }
 }
