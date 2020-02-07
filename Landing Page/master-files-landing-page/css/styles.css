@@ -1,0 +1,248 @@
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset */
+
+/* Main content styles */
+body{
+	background: #F7F7FF;
+	margin: 20px auto;
+}
+/* End of main content styles */
+
+/* Images */
+img.icon {
+	width: 114.73px;
+	max-height: 100%;
+	margin: 10px 40px;
+}
+
+.scooter{
+width: 50%;
+margin: 0 auto;
+}
+
+/* Social Media */
+.social-media{
+	margin: 10px 60px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+img.facebook {
+	border-radius: 50%;
+}
+
+/* Fonts */
+@font-face{
+	src: url(../fonts/Montserrat-Bold.ttf);
+	font-family:montbold;
+}
+
+@font-face{
+	src: url(../fonts/Montserrat-Regular.ttf);
+	font-family:montreg;
+}
+
+@font-face{
+	src: url(../fonts/Montserrat-Medium.ttf);
+	font-family:montmed;
+}
+p{
+	font-size: 24px;
+	font-family: montreg;
+}
+h1{
+	font-size: 60px;
+	margin: 0px 40px;
+	font-family: montbold;
+}
+h2{
+	font-size: 40px;
+	font-family: montbold;
+}
+form h2 {
+	margin: 15px 20px;
+}
+form h3 {
+	margin: 15px 20px;
+	font-family: montreg;
+}
+footer h3{
+	font-size: 18px;
+	font-family: montbold;
+}
+footer p{
+	font-size: 16px;
+	font-family: montreg;
+}
+input{
+	font-size: 16px;
+	font-family: montreg;
+}
+
+/* Button */
+button{
+	font-family: montbold;
+	cursor: pointer;
+}
+.dwu {
+	width: 250px;
+	height: 55px;
+	background-color: #57EEAB;
+	border: none;
+	border-radius: 10px;
+	display: block;
+	margin: 10px auto;
+	font-size: 24px;
+  }
+
+  .calc {
+	width: 302px;
+	height: 40px;
+	background-color: #FF8480;
+	border: none;
+	border-radius: 10px;
+	display: block;
+	color: white;
+	font-size: 24px;
+	margin: 0 auto;
+  }
+
+
+.checkbox {
+	height: 25px;
+	width: 25px;
+	margin: 10px 0px 10px 25px;
+	cursor: pointer;
+}
+
+.check {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.dashterms {
+	font-size: 16px;
+	margin: 15px 10px;
+}
+
+input[type="checkbox"]{
+	font-family: mont-reg;
+	font-size: 16px;
+}
+
+/* Form */
+input[type="text"]{
+	border: 2px solid white;
+	background: #F4F4F5;
+	padding-left: 5px;
+	width: 90%;
+	height: 40px;
+	border-radius: 12px;
+	display: block;
+	margin: 5px auto;
+}
+.application{
+	width: 100%;
+	max-width: 80%;
+	background: white;
+	border-radius: 20px;
+	margin: 20px auto;
+	border: 1px solid white;
+	box-shadow: 2px 5px 15px grey;
+}
+.alreadyapplied{
+	font-size: 14px;
+	margin: 10px 25px;
+}
+.app{
+	font-size: 14px;
+	color: #FF8480;
+}
+/* End of Form */
+
+/* Footer */
+footer{
+	background: #FFFD8C;
+	width: 100%;
+	padding: 10px 0px 10px 0px;
+}
+footer h3,p,button,section.hours{
+	margin: 15px 40px;
+}
+
+input[type="hours"]{
+	border: 2px solid #F7F7FF;
+	background: #F7F7FF;
+	width: 20%;
+	height: 40px;
+	border-radius: 12px;
+	display: inline-block;
+	padding-left: 5px;
+}
+input[type="city"]{
+	border: 2px solid white;
+	background: #F7F7FF;
+	width: 70%;
+	height: 40px;
+	border-radius: 12px;
+	display: inline-block;
+	margin: 5px auto;
+	padding-left: 5px;
+}
+/* End of footer */
+
+/*Media Screens */
+@media screen and (min-width: 375px) {
+
+h1{
+	font-size: 80px;
+}
+h2{
+	font-size: 24px;
+}
+}
