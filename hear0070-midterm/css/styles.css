@@ -1,0 +1,484 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********************************
+        End of CSS Reset
+*********************************/
+
+/*********************************
+            Fonts
+Linking the font families from the ttf files
+*********************************/
+@font-face{
+	src: url(../fonts/Cream\ Cake.ttf);
+	font-family:creamcake;
+}
+
+@font-face{
+	src: url(../fonts/ClementePDai-Regular.ttf);
+	font-family:clemente;
+}
+
+/*********************************
+     Main Default Adjustments
+In this section I am setting default font sizes/families
+*********************************/
+.container h1{
+  font-size: 3rem;
+  margin-bottom: 35px;
+}
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: clemente;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: creamcake;
+}
+
+h2{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: creamcake;
+}
+
+/*********************************
+            Home Styles
+*********************************/
+.img-desc{
+  margin-bottom: 40px;
+}
+
+.food-items{
+  font-family: creamcake;
+  font-size: 2rem;
+}
+
+/* Added this border bottom to create a seperation line from the rest of the page */
+.top{
+  border-bottom: 0.5px solid black;
+}
+
+.display{
+  margin-top: 40px;
+}
+
+/* Adjusting the link to the about page to adhere to the color theme */
+.img-desc a{
+  font-weight: bold;
+  text-decoration: none;
+  color:#F7AEB9;
+}
+/*********************************
+            Navigation
+*********************************/
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    height: 40px;
+}
+
+nav ul li{
+    width: 33.3%;
+    border-right: 1px solid;
+    box-sizing: border-box;
+    float: left;
+    font-family: creamcake;
+    font-size: 2rem;
+}
+
+/* For this element I removed the border on the last child to create seperation dividers between the nav items */
+nav ul li:last-child {
+    border: none;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: black;
+    background-color: #D8EBD0;
+    padding: 10px 20px;
+    display: block;
+}
+nav a:hover,
+nav a:focus,
+nav a.active {
+    background-color: #F7AEB9;
+    color: white;
+}
+
+/* Here I am fixing the 'back to top' button to the bottom right of the page */
+.top-btn {
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  color: black;
+}
+.top-btn i:before{
+  font-size: 1.5em;
+}
+
+/*********************************
+          Table Styles
+*********************************/
+
+table {
+    width: 360px;
+    margin: 20px auto;
+    border: 1px solid;
+    margin-bottom: 50px;
+  }
+caption {
+  font-family: creamcake;
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+  th,
+  td {
+    border: 1px solid;
+    padding: 10px 20px;
+  }
+  
+  th {
+    font-weight: bold;
+    background: #F7AEB9;
+  }
+
+  /* To alternate the row color I used tr:nth-child(2n) to apply the color #B88750 to every second row */
+  tbody tr:nth-child(2n) {
+    background-color: #B88750;
+  }
+  
+  tfoot {
+    font-size: 1.2rem;
+    background: #F7AEB9;
+    font-family: clemente;
+  }
+
+/*********************************
+            About Us
+*********************************/
+.info{
+  font-size: 1.1rem;
+}
+
+/* Here I used text-align: left; to place the text along the left side of the div*/
+.vision{
+  text-align: left;
+}
+
+/*Here I add a light grey backdrop behind the image and text, and use border radius to slightly round the corners */
+.main-content {
+  text-align: left;
+  margin: 20px auto;
+  margin-top: 50px;
+  width: 75%;
+  background:  #F3F4F4;
+  border-radius: 5%;
+  padding: 10px;
+}
+/*********************************
+            Contact
+*********************************/
+.form-wrap {
+    background-color: #F3F4F4;
+    padding: 20px;
+    padding-top: 30px;
+    margin: 25px auto;
+    margin-top:40px;
+    max-width: 30rem;
+    width: 80%;
+    border-radius: 10px;
+  }
+  .contact h2{
+    font-size: 2.5rem;
+    font-weight: inherit;
+    margin-bottom: 10px;
+  }
+  label{
+    font-size: 1.5rem;
+  }
+  
+  textarea,
+  input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.15rem;
+    border: 1px solid #B88750;
+    background: none;
+    margin: 8px 0;
+  }
+  
+  /* Here I add an element that causes the outline of the text box to turn #F7AEB9 when selected */
+  textarea:focus,
+  input:focus{
+    outline-color: #F7AEB9;
+    border: #F7AEB9;
+  }
+  
+  input[type="number"]{
+    min-width: 50px;
+  }
+  
+  /*This code changed the appearance of the checkboxes by adding height, width, and a border of any color. Using border-radius: 50%; to make the buttons circle */
+  input[type="radio"]+div{
+    border: 1px solid #B88750;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+  }
+  input[type="radio"]:checked+div{
+    background-color: #D8EBD0;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  select{
+    font-size: 1.15rem;
+    background: none;
+    vertical-align: top;
+  }
+  
+  textarea {
+    resize: none;
+    height: 5rem;
+  }
+  
+  button{
+    background-color: #F7AEB9;
+    padding: 10px 20px;
+    color: black;
+    font-size: 2.5rem;
+    font-family: creamcake;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+  
+  button:disabled {
+    background-color: grey;
+    cursor: unset;
+  }
+  
+  /* Here I am setting the height/width proportions of the map */
+iframe{
+  height: 100%;
+  width: 100%;
+}
+
+  /*********************************
+            Images
+*********************************/
+.TB {
+    max-width: 25%;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!! I spent a long while here trying to figure out the issue, when I use any kind of animation on anything it causes all my images to resize, I was really trying to incorporate them as the animations are worth 10 pts, but I really could not figure out the issue. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.container h1{
+  animation-name: rotate;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1s;
+}
+@keyframes rotate{
+  100%{
+      transform: rotate(360deg);
+  }
+*/
+
+/* Here I used float:left; to cause the following text to wrap around the image of the croissant */
+.croiss {
+    height: 115px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 15%;
+    }      
+
+.content{
+  margin: 0 15px;
+}
+
+/* Adding border-radius to the images to create a slight roundness to the edges */
+.pic {
+    height: 325px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 15%;
+}
+
+/*********************************
+              Footer
+*********************************/
+/* Here I add padding to the .copyright class to increase the size of the black bar across the bottom */
+.copyright {
+    background-color: #000;
+    color: #D8EBD0;
+    padding: 15px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*********************************
+            Media Queries
+*********************************/
+
+@media screen and (min-width: 400px){
+  body {
+      font-size: 1.5rem;
+  }
+/*********************************
+            Homepage
+*********************************/
+  .top{
+    width: 80%;
+    margin: 45px auto;
+  }
+  .pic{
+    margin: 5px auto;
+  }
+  /* I set a grid on the 4 food items to arrange the images in a tidier fashion */
+  .food-items{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: 15px auto;
+  }
+/*********************************
+              About
+*********************************/
+.vision{
+  font-size: 3rem;
+}
+.info{
+  font-size: 1.5rem;
+}
+.croiss{
+  height:175px;
+}
+table{
+  width: 70%;
+}
+@media screen and (min-width: 775px){
+  body {
+      font-size: 1rem;
+  }
+  .TB {
+    width: 15%;
+  }
+/*********************************
+            Homepage
+*********************************/
+  body{
+    font-size: 1.25rem;
+  }
+  .pic{
+    border-radius: 30px;
+  }
+  .content{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Again here I use display:grid; to arrange the two divs side by side for appearance sake*/
+  .top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .food-items{
+    margin: 10px auto;
+    width: 650px;
+  }
+  .bakery, .coffee{
+    margin: 40px auto;
+    width: 70%;
+  }
+/*********************************
+              About
+*********************************/
+.about{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px auto;
+    width: 75%;
+  }
+  .croiss{
+    border-radius: 15px;
+    height: 150px;
+  }
+  table{
+    width: 100%;
+    height: 500px;
+  }
+/*********************************
+              Contact
+*********************************/
+  .contact{
+    display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 40px auto;
+      width: 85%;
+    }
+  .form-wrap{
+    margin: 0 auto;
+    width: 600px;
+  }
+}
