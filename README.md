@@ -1,5 +1,5 @@
 # glaciul.github.io
-My public GitHub Pages site
+hear0070-final
 
 For my final assignment it was most definitely a fun challenge.
 I started out by creating the mobile layout for my website.
