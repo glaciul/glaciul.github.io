@@ -11,3 +11,5 @@ I was able to closely resemble my version to the mockup, but feel as though the 
 Thanks for everything that you taught us this semester, I hope you have an enjoyable summer break. Hope you stay healthy and well.
 
 -Dylan
+
+EDIT: I could also not figure out how to publish my index.html file to the root of my github page site. Couldn't find anywhere online explaining how to either. My apologies.
